@@ -46,3 +46,31 @@ console.log(typeof myFunction)
 console.log(typeof myObj)
 
 console.log(typeof anotherId)
+
+/************************************************************************/
+// Stack , Heap
+
+// In primitive types - Stack is used
+
+// In non primitive types , heap is used
+
+let myYouTubeName = "nikhilvipradas.com"
+let anotherName = myYouTubeName
+anotherName = "chaiaurcode"
+console.log(myYouTubeName);
+console.log(anotherName);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "nikhil@google.com"
+
+console.log(userOne)
+console.log(userTwo)
+
+// For primitive , copy of variable is created so if value is updated , it may not update for older variable
+// For non primitive , same value for 2 different variables exists , so if value is updated for one , it also reflects for other
